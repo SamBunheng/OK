@@ -1,0 +1,18 @@
+div{
+    /* background: linear-gradient(to bottom,pink ); */
+    background: linear-gradient(to bottom,pink,blue);
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6-MfoJ0MLH3ZH7oIyNvP_PfLRoYI-ZgPeQ&s"); */
+    height: 500px;
+    width: 300px;
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box1{
+
+}
+.box2{
+    float: left;
+    display: righ;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10vh;
+        }
+        .container{
+            width: 100%;
+            height: 200vh;
+            background-color: burlywood;
+            /* padding-top: 50px; */
+            /* position: relative; */
+
+            & div{
+                width: 100px;
+                height: 100px;
+            }
+            & .b1{
+                position: absolute;
+                top: 50px;
+                /* z-index: 1; */
+                left: 50px;
+                background-color: pink;
+            }
+            & .b2{
+                height: 50px;
+                width: 100%;
+                position: sticky;
+                top: 0px;
+                /* margin-top: 200px; */
+                /* bottom: 500px; */
+                /* top: 200px; */
+                /* left: 100px; */
+                right: 200px;
+                /* top: 50px; */
+
+                /* z-index: -2;  */
+                /* bottom: 50px; */
+                background-color: black;
+            & p{
+                color: wheat;
+                display: flex;
+                justify-content: center;
+            }
+            }
+            & .b3{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="b1">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="b2"><p>messi</p></div>
+        <div class="b3"></div>
+    </main>
+</body>
+</html>

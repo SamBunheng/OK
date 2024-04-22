@@ -1,0 +1,162 @@
+:root {
+  --primary-color: blue;
+  /* width: 100%;
+  height: 200px;
+  background-color: aquamarine; */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+}
+header{
+  background-image: url(https://xmple.com/wallpaper/graph-paper-black-grey-grid-7680x4320-c2-000000-a9a9a9-l2-8-88-a-0-f-20.svg);
+  color: white;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  & nav{
+    height: 40px;
+    background-color: #a8a8a8;
+    opacity: 0.9;
+    color: black;
+    font-size: 19px;
+    padding: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+  }
+  & .title{
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 70px;
+    font-size: 40px;
+  }
+}
+
+.container{
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+}
+p{
+  font-size: 20px;
+}
+.a{
+  background-image: url(https://xmple.com/wallpaper/graph-paper-black-grey-grid-7680x4320-c2-000000-a9a9a9-l2-8-88-a-0-f-20.svg);
+  border-radius: 5px;
+  padding: 10px;  
+  background-color: black;
+  color: white;
+  grid-column: 1/span 3;
+
+}
+.b{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+.c{
+  padding: 20px;
+  background-color: purple;
+  color: white;
+  grid-column: 1/span 4;
+}
+.d{
+  position: relative;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 1 /span 2;
+  & .new{
+    position: absolute;
+    top: -10px;
+    left: -15px;;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    transform: rotate(-20deg);
+  }
+}
+.e{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 3/span 2;
+}
+.f{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 1/span 3;
+}
+.g{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+.h{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 1/span 2;
+}
+.i{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 3/span 1;
+}
+.j{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 4;
+}
+.k{
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  grid-column: 1/span 4;
+  margin-bottom: 20px;
+}
+@media screen and (width < 600px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .c{
+    background-color: var(--primary-color);
+  }
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 235px;
+  background-image: url(https://xmple.com/wallpaper/graph-paper-black-grey-grid-7680x4320-c2-000000-a9a9a9-l2-8-88-a-0-f-20.svg);
+  & .foot-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    background-color: #a7a7a7;
+    color: black;
+    width: 90%;
+    opacity: 0.9;
+    /* margin-left: 10%; */
+  }
+  & .list{
+   margin-left: 30px; 
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+}
